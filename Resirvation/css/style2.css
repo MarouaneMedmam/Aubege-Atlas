@@ -1,0 +1,293 @@
+
+/* CSS Document */
+*{
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 ;
+	background: #FED0C1;
+	width: 100%;
+	box-sizing: border-box;
+}
+header img{
+	height: 45px;
+	line-height: 50px;
+	font-size: 24px;
+	float: left;
+	
+	
+}
+header nav{
+	float: right;
+}
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	
+}
+header nav ul li a{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color:#fff;
+	display: block;
+}
+header nav ul li a:hover{
+	color: #A38854;
+}
+.menu {
+	color: black;
+	float:right;
+	line-height: 50px;
+	font-size: 24;
+	cursor: pointer;
+	display: none;
+}
+
+#continer {
+	background: url("../images/haeder.jpg") no-repeat ;
+	background-attachment: fixed;
+	background-size: cover;
+    background-position: center center;
+    display: flex;	
+    align-items: center;
+    height: 100vh;
+}
+.conter {
+	color: white;
+	width: 30%;	
+	text-align: center;
+	
+}
+.conter P{
+	font-size: 40px;
+	font-style: oblique;
+	
+}
+.conter button{
+	background-color: rgba(0,0,0,0.00);
+	border: 2px solid white;
+	padding: 12px 30px;	
+}
+.conter button a{
+	color: white;
+}
+.info {
+	background-color: #4FC4CA;
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.info-1 {
+	padding: 40px 0;
+	color: rgba(0,0,0,0.83);
+	width:45%;
+	text-align: center;
+	
+}
+.auberge {
+	background-image: url("../images/auberge.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat; 
+	padding-bottom: 60%;
+	width: 100%;
+	margin-top: -15px;
+}
+.maps iframe{
+	width: 100%;
+}
+.maps {
+	border:2px solid #000000;
+}
+.contact {
+	background: url("../images/haeder.jpg") no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+   	background-position: center center;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/*
+.border{
+	border: 2px solid rgba(130,228,213,0.7);
+	width:30%;
+	height:40%;
+	padding: 10px;
+}
+*/
+
+.contact1{
+	background-color: rgba(130,228,213,0.7);
+	text-align: center;
+    margin: 15% 30% 5% ;
+    padding: 10px 40px;
+}
+/*footer*/
+.retour {
+	background-color: #FED0C1;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.fa-sort-up {
+	color: black;
+	font-size: 30px;
+}
+.up{
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	background: #FED0C1;
+	padding: 10px 0;
+	
+}
+footer img{
+	text-align: center;
+	height: 50px;
+	font-size: 24px;
+}
+.appel {
+	width: 100%;
+	font-size: 14px;
+	margin-top: 40px;
+}
+
+.appel a{
+	padding: 0 40px;
+	color: black;
+}
+.icon {
+	width: 100%;
+	font-size: 30px;
+	margin-top: 40px;
+	padding-bottom: 30px;	
+}
+.icon a{
+	padding: 0 40px;
+	color: black;
+}
+.appel i{
+	padding-right: 20px;
+}
+/*footer*/
+
+@media screen and (max-width:1250px){
+.info-1 {
+	font-size: 12px;
+	width:50%;
+}
+.border{
+	width:30%;
+	height: 40%;
+}
+	
+
+}
+
+@media screen and (max-width:1040px){
+	header{
+		padding: 0 20px;
+	}
+	.menu{
+		display: block;
+	}
+	header nav{
+/*		display: none;*/
+		position: absolute;
+		width:100%;
+		height:50vh;
+		background: #333;
+		top: 50px;
+		left:-100%;
+		transition: 0.5s;
+	}
+	header nav.active{
+		left: 0;
+	}
+	header nav ul{
+		display: block;
+		text-align: center;
+		
+	}
+	header nav ul li a{
+		border-bottom: 1px solid rgba(0,0,0,.3);
+		
+	}
+	
+
+	.info-1 {
+		font-size: 12px;
+		width:50%;
+	}
+	.border{
+		width:50%;
+	}
+	.appel{
+		display: flex;
+		flex-direction: column;
+	}
+	
+
+}
+@media screen and (max-width: 600px ){
+*{
+	font-size: 12px;
+}
+#continer {
+	background: url("../images/haeder-mobile.jpg") no-repeat;
+	height:370px;
+	width: 100%;
+}
+.info-1 {
+	font-size: 12px;
+	width:80%;
+}
+.border{
+	width:80%;
+	height: 50%;
+}
+.maps iframe{
+	height:300px;
+}
+.conter {
+	color: white;
+	width: 70%;	
+	text-align: center;
+	
+}	
+.contact {
+	background: url("../images/haeder-mobile.jpg") no-repeat;
+	height:370px;
+	width: 100%;
+	}
+	
+
+}
+
+
+
+
